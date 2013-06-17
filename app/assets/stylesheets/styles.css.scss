@@ -1,0 +1,29 @@
+/* You can change the text font */
+/**$baseFontFamily: Oxyge;
+@import url (http://fonts.googleapis.com/css?family=Oxygen);*/
+
+/*$navbarBackgroundHighlight: white;
+$navbarBackgroundt: white;
+*/
+
+
+
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+	text-align: center;
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+
+}

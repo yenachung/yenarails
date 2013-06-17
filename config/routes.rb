@@ -1,5 +1,8 @@
 Yenarails::Application.routes.draw do
 #get "pages/index"
+get 'about' => 'pages#about'
+get 'country' => 'pages#country'
+get 'disease' => 'pages#disease'
 root :to => 'pages#index'
 
   # The priority is based upon order of creation:

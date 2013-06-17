@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Yenarails</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Yenarails</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<%= yield %>
 
-</body>
+	</head>
+
+	<body>
+
+		<%= render 'layouts/header' %>
+		
+		<div class="container-fluid">
+		  <div class="row-fluid">
+		    <div class="span2">
+		      <!--Sidebar content-->
+		    </div>
+		    <div class="span10">
+		      <!--Body content-->
+		    </div>
+				<%= yield %>
+
+				<%= render 'layouts/footer' %>
+
+		  </div>
+		</div>
+
+	
+
+
+	</body>
 </html>
