@@ -1,4 +1,6 @@
 Yenarails::Application.routes.draw do
+  devise_for :users
+
 #get "pages/index"
 get 'about' => 'pages#about'
 get 'country' => 'pages#country'

@@ -1,29 +1,34 @@
-<div class="hero-unit">
- 
-	<h1>Welcome to Project name</h1>
-	<p>
-		<h2>
-			Search patient groups from over ### diseases in ### countries
-		</h2>
-	</p>
-	<p>
-		<%= link_to "Sign up now!", "#", class: "btn btn-success btn-large"	%>
-	</p>
+<% if user_signed_in? %>
+		<h1>You're logged in! <br> Welcome to Project name</h1>
 
-	<br>
+<% else %>
+	<div class="hero-unit">
+	 
+		<h1>Welcome to Project name</h1>
+		<p>
+			<h2>
+				Search patient groups from over ### diseases in ### countries
+			</h2>
+		</p>
+		<p>
+			<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-success btn-large"	%>
+		</p>
 
-	<p>
-		<h2>
-			Spot Light Patient Group
+		<br>
 
-		</h2>
-	</p>
-	<br>
+		<p>
+			<h2>
+				Spot Light Patient Group
 
-	<p>
-		<h2>
-		Popular Patient Group Searches
-		</h2>
-	</p>
+			</h2>
+		</p>
+		<br>
 
-</div>
+		<p>
+			<h2>
+			Popular Patient Group Searches
+			</h2>
+		</p>
+
+	</div>
+<% end %>

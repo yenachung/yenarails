@@ -15,6 +15,11 @@
 		<%= render 'layouts/header' %>
 		
 		<div class="container-fluid">
+		  
+		  <% flash.each do |name, msg| %>
+		  	<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+		  <% end %>
+
 		  <div class="row-fluid">
 		    <div class="span2">
 		      <!--Sidebar content-->
@@ -23,6 +28,9 @@
 		      <!--Body content-->
 		    </div>
 				<%= yield %>
+
+
+
 
 				<%= render 'layouts/footer' %>
 

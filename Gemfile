@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-
-
+gem 'jquery-rails'
+gem 'devise'
+gem 'simple_form'
+gem 'country-select'
 
 group :production, :staging do
   gem "pg"
@@ -22,6 +24,5 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 
